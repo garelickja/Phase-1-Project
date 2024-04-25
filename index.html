@@ -4,9 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Weather App</title>
   </head>
   <body>
+    <div class="search-bar">
+      <h1>Weather App</h1>
+      <input type="text" id="latitude-input" placeholder="Enter Latitude" />
+      <input type="text" id="longitude-input" placeholder="Enter Longitude" />
+      <button id="search-button">See Weather</button>
+      <button id="mode-toggle">Toggle Dark or Light Mode</button>
+      <h1 id="weather-forecast-label" style="display: none">Weather Forecast</h1>
+    </div>
+    <div id="weather-container" style="display: none">
+      <div id="current-weather-card"></div>
+      <div id="hourly-weather-card-container" class="weather-card">
+        <button id="left-scroll-btn">&#8678;</button>
+        <div id="hourly-weather-card" class="scroll-container"></div>
+        <button id="right-scroll-btn">&#8680;</button>
+      </div>
+      <div id="daily-weather-card"></div>
     <script src="index.js"></script>
-  </body>
+</body>
 </html>
